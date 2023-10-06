@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="controls">
+            <video src="" autoplay></video>
+            <button type="button" class="startBtn">Start</button>
+            <button type="button" class="stopBtn">Stop</button>
+            <button type="button" class="takePhoto">Take Photo</button>
+        </div>
+        <div class="filters">
+            <label>
+                <span>Zoom</span>
+                <input type="range" id="zoom" min="0.1" max="2" step="0.1" value="1">
+            </label>
+            <label>
+                <span>position-x</span>
+                <input type="range" id="zoom-offset-x" min="0" max="1" step="0.1" value="0">
+            </label>
+            <label>
+                <span>position-y</span>
+                <input type="range" id="zoom-offset-y" min="0" max="1" step="0.1" value="0">
+            </label>
+            <label>
+                <span>Remove color</span>
+                <input type="checkbox" id="rm-color" >
+                <input type="color" id="color" >
+                <input type="range" id="rm-color-level" min="0" max="100" step="1" value="0">
+            </label>
+
+            <label>
+                <span>GreyScale</span>
+                <input type="checkbox" id="greyscale" value="on">
+            </label>
+
+            <label>BlackAndWhite
+                <input type="checkbox" id="blackWhite" value="on">
+            </label>
+        </div>
+        <canvas></canvas>
+    </div>
+    <div class="download-area"></div>
+    <audio src="snap.mp3"></audio>
+</body>
+
+</html>
